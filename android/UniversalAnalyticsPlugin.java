@@ -156,7 +156,7 @@ public class UniversalAnalyticsPlugin extends CordovaPlugin {
                     .setCampaignParamsFromUrl(deepLinkUrl)
                     .build()
                     );
-            callbackContext.success("Track Screen: " + screenname);
+            callbackContext.success("Track Screen: " + screenname + ". With ref: " + deepLinkUrl);
         } else {
             callbackContext.error("Expected one non-empty string argument.");
         }
